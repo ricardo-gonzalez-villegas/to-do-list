@@ -12,7 +12,7 @@ const projects = () => {
     input.id = `${project.name}`;
     tab.appendChild(input);
     const label = document.createElement("label");
-    label.innerHTML = `${project.name}`;
+    label.innerHTML = `${project.name} ( ${project.tasks.length} )`;
     label.htmlFor = `${project.name}`;
     tab.appendChild(label);
   }

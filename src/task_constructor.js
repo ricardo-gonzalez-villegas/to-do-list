@@ -8,6 +8,9 @@ function task(title, priority, date, subtask1, subtask2, description, notes) {
   this.subtask2 = subtask2;
   this.description = description;
   this.notes = notes;
+  this.subtask1Completed = false;
+  this.subtask2Completed = false; 
+  this.completed = false;
 }
 
 export { task };

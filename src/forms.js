@@ -12,7 +12,7 @@ const title = () => {
   input.id = "title";
   input.name = "title";
   input.type = "text";
-  input.maxLength = 40;
+  input.maxLength = 30;
   input.placeholder = "Title...";
   div.appendChild(input);
   return div;
@@ -78,8 +78,8 @@ const subtasks = () => {
   input1.name = "subtask1";
   input1.type = "text";
   input1.placeholder = "Subtask...";
-  input1.maxLength = 50;
-  input1.size = 50;
+  input1.maxLength = 30;
+  input1.size = 30;
   subtask1.appendChild(input1);
   const subtask2 = document.createElement("div");
   subtask2.classList.add("subtask2");
@@ -95,8 +95,8 @@ const subtasks = () => {
   input2.name = "subtask2";
   input2.type = "text";
   input2.placeholder = "Subtask...";
-  input2.maxLength = 50;
-  input2.size = 50;
+  input2.maxLength = 30;
+  input2.size = 30;
   subtask2.appendChild(input2);
   return div;
 };
@@ -112,7 +112,7 @@ const description = () => {
   const input = document.createElement("textarea");
   input.id = "description";
   input.name = "description";
-  input.placeholder = "Description";
+  input.placeholder = "Description...";
   input.rows = 5;
   input.maxLength = 300;
   div.appendChild(input);
@@ -130,7 +130,7 @@ const notes = () => {
   const input = document.createElement("textarea");
   input.id = "notes";
   input.name = "notes";
-  input.placeholder = "Notes";
+  input.placeholder = "Notes...";
   input.rows = 5;
   input.maxLength = 300;
   div.appendChild(input);
@@ -167,7 +167,7 @@ const button = () => {
 };
 
 const addTask = () => {
-  const container = document.createElement("div");
+  const container = document.createElement("div");  
   container.classList.add("form");
   const form = document.createElement("form");
   form.id = "form";

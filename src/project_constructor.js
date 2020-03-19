@@ -1,19 +1,18 @@
 "use task";
 
-const project = name => {
-  "use strict";
-  let _name = name;
-  let _tasks = [];
-
-  const getName = () => _name;
-  const getTasks = () => _tasks;
-  const addTask = (task) => (_tasks.push(task));
-
-  return {
-    getName,
-    getTasks,
-    addTask
-  };
+function project(name){
+  this.name = name;
+  this.tasks = [];
 };
 
-export { project };
+const addToProject = (selection, task) => {
+  for (let i = 0; i < window.localStorage.length; i++) {
+    const project = JSON.parse(window.localStorage.getItem(localStorage.key(i)));
+    if (project.name == selection) {
+      project.tasks.push(task);
+      window.localStorage.setItem(`${project.name}`, JSON.stringify(project));
+    }
+  }
+};
+
+export { project, addToProject };
