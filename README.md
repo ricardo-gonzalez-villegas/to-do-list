@@ -5,6 +5,9 @@ localStorage. It was part of the open source Odin Project.
 
 <a href="https://ricardo-gonzalez-villegas.github.io/to-do-list">View it here.</a>
 
+<h2>Technologies Used<h2/>
+HTML, CSS, Javascript, Webpack
+  
 <h1>Home Page</h1>
 <p>The homepage is populated with a default project and tasks if none are found in the browser's local storage.
 </p>
